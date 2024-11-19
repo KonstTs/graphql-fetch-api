@@ -2,9 +2,9 @@ import { GraphQLObjectType } from 'graphql';
 import {defaultOptions as defo} from './defaults';
 import {mergeObjects} from './utils';
 
-export const provideQtype = (_type) => new GraphQLObjectType(_type);
+export const provideQLtype = (_type) => new GraphQLObjectType(_type);
 
-export const provideQuery = (_query) => new GraphQLObjectType(_query);
+export const provideQLquery = (_query) => new GraphQLObjectType(_query);
 
 export const provideRequest = (_url:string, _options?:any) => {
     if(!_url) return;

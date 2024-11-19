@@ -1,2 +1,6 @@
-// export { blah } from './scr/engine';
-export const Blah:string = 'sfs';
+export { 
+    provideQLtype, 
+    provideQLquery, 
+    provideRequest, 
+    fetchQL
+} from './scr/engine';
