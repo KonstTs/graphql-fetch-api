@@ -29,17 +29,17 @@
     ],
     "type": "module",
     "devDependencies": {
-      "@arethetypeswrong/cli": "^0.15.4",
-      "@changesets/cli": "^2.27.7",
-      "prettier": "^3.3.3",
-      "tsup": "^8.2.4",
-      "typescript": "^5.5.4",
-      "vitest": "^2.0.5"
+      "@arethetypeswrong/cli": "^0.17.0",
+      "@changesets/cli": "^2.27.9",
+      "tsup": "^8.3.5",
+      "typescript": "^5.6.3"
     },
     "scripts": {
       "build": "tsup",
       "ci": "npm run build && npm run check-exports && npm run lint",
       "lint": "tsc",
-      "check-exports": "attw --pack ."
+      "check-exports": "attw --pack .",
+      "local-release": "npm run ci && changeset version && changeset publish",
+      "prepublishOnly": "npm run ci"
     }
   }
