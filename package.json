@@ -25,7 +25,8 @@
     },
     "license": "MIT",
     "files": [
-        "dist/"
+        "dist",
+        "src"
     ],
     "type": "module",
     "devDependencies": {
